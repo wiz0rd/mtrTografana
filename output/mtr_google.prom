@@ -1,0 +1,32 @@
+# HELP mtr_end_to_end_avg_rtt_ms End-to-end average round-trip time in milliseconds
+# TYPE mtr_end_to_end_avg_rtt_ms gauge
+mtr_end_to_end_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default"} 11.273 1749529873793
+# HELP mtr_end_to_end_loss_percent End-to-end packet loss percentage
+# TYPE mtr_end_to_end_loss_percent gauge
+mtr_end_to_end_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default"} 0.0 1749529873793
+# HELP mtr_end_to_end_jitter_ms End-to-end jitter (standard deviation) in milliseconds
+# TYPE mtr_end_to_end_jitter_ms gauge
+mtr_end_to_end_jitter_ms{environment="test",service="google_com",target="www.google.com",probe="default"} 0.943 1749529873793
+# HELP mtr_hop_count Number of network hops to target
+# TYPE mtr_hop_count gauge
+mtr_hop_count{environment="test",service="google_com",target="www.google.com",probe="default"} 8 1749529873793
+# HELP mtr_avg_rtt_ms Average round-trip time per hop in milliseconds
+# TYPE mtr_avg_rtt_ms gauge
+# HELP mtr_loss_percent Packet loss percentage per hop
+# TYPE mtr_loss_percent gauge
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="1",host="_gateway"} 1.557 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="1",host="_gateway"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 3.236 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 19.263 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 16.867 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 12.298 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 13.757 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 13.517 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 0.0 1749529873793
+mtr_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 11.273 1749529873793
+mtr_loss_percent{environment="test",service="google_com",target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 0.0 1749529873793

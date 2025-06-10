@@ -1,0 +1,100 @@
+# HELP mtr_info MTR trace information
+# TYPE mtr_info gauge
+mtr_info{target="www.google.com",probe="default",port="443"} 1
+
+# HELP mtr_loss_percent Packet loss percentage per hop
+# TYPE mtr_loss_percent gauge
+mtr_loss_percent{target="www.google.com",probe="default",hop="1",host="_gateway"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 0.0
+mtr_loss_percent{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 0.0
+
+# HELP mtr_packets_sent Total packets sent per hop
+# TYPE mtr_packets_sent counter
+mtr_packets_sent{target="www.google.com",probe="default",hop="1",host="_gateway"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 10
+mtr_packets_sent{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 10
+
+# HELP mtr_last_rtt_ms Last round trip time in milliseconds
+# TYPE mtr_last_rtt_ms gauge
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="1",host="_gateway"} 1.736
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 2.963
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 13.798
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 13.67
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 14.654
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 11.578
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 11.293
+mtr_last_rtt_ms{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 10.696
+
+# HELP mtr_avg_rtt_ms Average round trip time in milliseconds
+# TYPE mtr_avg_rtt_ms gauge
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="1",host="_gateway"} 1.765
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 3.112
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 13.361
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 13.748
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 13.719
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 13.403
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 11.477
+mtr_avg_rtt_ms{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 11.2
+
+# HELP mtr_best_rtt_ms Best round trip time in milliseconds
+# TYPE mtr_best_rtt_ms gauge
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="1",host="_gateway"} 1.593
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 2.655
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 11.773
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 12.768
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 11.838
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 11.298
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 10.516
+mtr_best_rtt_ms{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 10.017
+
+# HELP mtr_worst_rtt_ms Worst round trip time in milliseconds
+# TYPE mtr_worst_rtt_ms gauge
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="1",host="_gateway"} 2.076
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 3.845
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 16.577
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 15.691
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 15.941
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 16.383
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 13.357
+mtr_worst_rtt_ms{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 11.92
+
+# HELP mtr_jitter_ms Jitter (standard deviation) in milliseconds
+# TYPE mtr_jitter_ms gauge
+mtr_jitter_ms{target="www.google.com",probe="default",hop="1",host="_gateway"} 0.159
+mtr_jitter_ms{target="www.google.com",probe="default",hop="2",host="kabelbox.local"} 0.318
+mtr_jitter_ms{target="www.google.com",probe="default",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 1.78
+mtr_jitter_ms{target="www.google.com",probe="default",hop="4",host="145.253.52.12"} 0.877
+mtr_jitter_ms{target="www.google.com",probe="default",hop="5",host="74.125.32.52"} 1.318
+mtr_jitter_ms{target="www.google.com",probe="default",hop="6",host="108.170.235.151"} 1.741
+mtr_jitter_ms{target="www.google.com",probe="default",hop="7",host="142.250.214.187"} 0.742
+mtr_jitter_ms{target="www.google.com",probe="default",hop="8",host="any-in-2678.1e100.net"} 0.579
+
+# HELP mtr_hop_count Total number of hops to target
+# TYPE mtr_hop_count gauge
+mtr_hop_count{target="www.google.com",probe="default"} 8
+
+# HELP mtr_end_to_end_loss_percent End-to-end packet loss percentage
+# TYPE mtr_end_to_end_loss_percent gauge
+mtr_end_to_end_loss_percent{target="www.google.com",probe="default"} 0.0
+
+# HELP mtr_end_to_end_avg_rtt_ms End-to-end average round trip time
+# TYPE mtr_end_to_end_avg_rtt_ms gauge
+mtr_end_to_end_avg_rtt_ms{target="www.google.com",probe="default"} 11.2
+
+# HELP mtr_end_to_end_jitter_ms End-to-end jitter
+# TYPE mtr_end_to_end_jitter_ms gauge
+mtr_end_to_end_jitter_ms{target="www.google.com",probe="default"} 0.579
+
+# HELP mtr_last_run_timestamp_ms Timestamp of last MTR run
+# TYPE mtr_last_run_timestamp_ms gauge
+mtr_last_run_timestamp_ms{target="www.google.com",probe="default"} 1749530518593

@@ -1,0 +1,41 @@
+# MTR Monitoring Configuration
+# This file defines multiple probe targets and global settings
+
+global:
+  output_dir: "./output"
+  log_file: "./mtr_exporter.log"  
+  log_level: "INFO"
+  mtr_cycles: 10
+  
+probes:
+  - name: "google_web"
+    target: "www.google.com"
+    port: 80
+    labels:
+      environment: "test"
+      service: "google_web"
+      protocol: "http"
+    
+  - name: "google_dns"
+    target: "8.8.8.8"
+    port: 53
+    labels:
+      environment: "test"
+      service: "google_dns"
+      protocol: "dns"
+      
+  - name: "cloudflare_dns"
+    target: "1.1.1.1"
+    port: 53
+    labels:
+      environment: "test"
+      service: "cloudflare_dns"
+      protocol: "dns"
+      
+  - name: "github"
+    target: "github.com"
+    port: 443
+    labels:
+      environment: "test"
+      service: "github"
+      protocol: "https"

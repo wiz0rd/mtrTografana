@@ -1,0 +1,120 @@
+# HELP mtr_info MTR trace information
+# TYPE mtr_info gauge
+mtr_info{environment="test",service="web",target="www.google.com",probe="google_test",port="80"} 1
+
+# HELP mtr_path_health_score Overall path health score (0-100, higher is better)
+# TYPE mtr_path_health_score gauge
+mtr_path_health_score{environment="test",service="web",target="www.google.com",probe="google_test"} 97.4
+
+# HELP mtr_path_rtt_variance_ms RTT variance across the path
+# TYPE mtr_path_rtt_variance_ms gauge
+mtr_path_rtt_variance_ms{environment="test",service="web",target="www.google.com",probe="google_test"} 19.336000000000002
+
+# HELP mtr_path_avg_jitter_ms Average jitter across all valid hops
+# TYPE mtr_path_avg_jitter_ms gauge
+mtr_path_avg_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test"} 2.6840000000000006
+
+# HELP mtr_path_max_jitter_ms Maximum jitter across all valid hops
+# TYPE mtr_path_max_jitter_ms gauge
+mtr_path_max_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test"} 14.694
+
+# HELP mtr_path_total_loss_percent Maximum packet loss percentage along the path
+# TYPE mtr_path_total_loss_percent gauge
+mtr_path_total_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test"} 0.0
+
+# HELP mtr_loss_percent Packet loss percentage per hop
+# TYPE mtr_loss_percent gauge
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 0.0
+mtr_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 0.0
+
+# HELP mtr_packets_sent Total packets sent per hop
+# TYPE mtr_packets_sent counter
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 10
+mtr_packets_sent{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 10
+
+# HELP mtr_last_rtt_ms Last round trip time in milliseconds
+# TYPE mtr_last_rtt_ms gauge
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 1.52
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 3.108
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 14.91
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 14.244
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 12.837
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 11.64
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 19.096
+mtr_last_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 11.899
+
+# HELP mtr_avg_rtt_ms Average round trip time in milliseconds
+# TYPE mtr_avg_rtt_ms gauge
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 1.592
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 3.076
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 20.928
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 13.47
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 12.365
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 12.323
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 12.603
+mtr_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 11.493
+
+# HELP mtr_best_rtt_ms Best round trip time in milliseconds
+# TYPE mtr_best_rtt_ms gauge
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 1.52
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 2.474
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 11.54
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 11.297
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 11.262
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 11.405
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 9.868
+mtr_best_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 10.2
+
+# HELP mtr_worst_rtt_ms Worst round trip time in milliseconds
+# TYPE mtr_worst_rtt_ms gauge
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 1.707
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 3.854
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 59.502
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 15.662
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 13.628
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 13.533
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 19.096
+mtr_worst_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 13.559
+
+# HELP mtr_jitter_ms Jitter (standard deviation) in milliseconds
+# TYPE mtr_jitter_ms gauge
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="1",host="_gateway"} 0.054
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="2",host="kabelbox.local"} 0.472
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="3",host="ip-081-210-178-040.um21.pools.vodafone-ip.de"} 14.694
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="4",host="145.253.52.12"} 1.321
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="5",host="74.125.32.52"} 0.731
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="6",host="108.170.235.151"} 0.753
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="7",host="142.250.214.187"} 2.574
+mtr_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test",hop="8",host="any-in-2678.1e100.net"} 0.873
+
+# HELP mtr_hop_count Total number of hops to target
+# TYPE mtr_hop_count gauge
+mtr_hop_count{environment="test",service="web",target="www.google.com",probe="google_test"} 8
+
+# HELP mtr_end_to_end_loss_percent End-to-end packet loss percentage
+# TYPE mtr_end_to_end_loss_percent gauge
+mtr_end_to_end_loss_percent{environment="test",service="web",target="www.google.com",probe="google_test"} 0.0
+
+# HELP mtr_end_to_end_avg_rtt_ms End-to-end average round trip time
+# TYPE mtr_end_to_end_avg_rtt_ms gauge
+mtr_end_to_end_avg_rtt_ms{environment="test",service="web",target="www.google.com",probe="google_test"} 11.493
+
+# HELP mtr_end_to_end_jitter_ms End-to-end jitter
+# TYPE mtr_end_to_end_jitter_ms gauge
+mtr_end_to_end_jitter_ms{environment="test",service="web",target="www.google.com",probe="google_test"} 0.873
+
+# HELP mtr_last_run_timestamp_ms Timestamp of last MTR run
+# TYPE mtr_last_run_timestamp_ms gauge
+mtr_last_run_timestamp_ms{environment="test",service="web",target="www.google.com",probe="google_test"} 1749531555828

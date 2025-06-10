@@ -1,0 +1,59 @@
+2025-06-10 06:19:26 - Creating output directory: ./output
+2025-06-10 06:19:26 - Starting MTR export for www.google.com:80
+2025-06-10 06:19:26,643 - INFO - Starting MTR export for www.google.com
+2025-06-10 06:19:26,643 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 80 www.google.com
+2025-06-10 06:19:41,866 - ERROR - Failed to write output file: [Errno 2] No such file or directory: './output/mtr_google.prom.tmp'
+2025-06-10 06:19:41 - ERROR: MTR export failed
+2025-06-10 06:20:43 - Starting MTR export for www.google.com:80
+2025-06-10 06:20:43,059 - INFO - Starting MTR export for www.google.com
+2025-06-10 06:20:43,059 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 80 www.google.com
+2025-06-10 06:20:58,105 - INFO - Successfully wrote metrics to ./output/mtr_google.prom.tmp
+2025-06-10 06:20:58,105 - INFO - MTR export completed successfully
+2025-06-10 06:20:58 - Successfully updated metrics file: ./output/mtr_google.prom
+2025-06-10 06:20:58 - Metrics summary:
+2025-06-10 06:20:58 -   # HELP mtr_end_to_end_avg_rtt_ms End-to-end average round-trip time in milliseconds
+2025-06-10 06:20:58 -   # TYPE mtr_end_to_end_avg_rtt_ms gauge
+2025-06-10 06:20:58 -   mtr_end_to_end_avg_rtt_ms{environment="test",service="google_com",target="www.google.com"} 14.002 1749529258104
+2025-06-10 06:20:58 - MTR export completed successfully
+2025-06-10 06:28:26 - Running in single probe mode for www.google.com:80
+2025-06-10 06:28:26 - ERROR: Single probe MTR export failed
+2025-06-10 06:29:16 - Running in single probe mode for www.google.com:80
+2025-06-10 06:29:16,660 - INFO - Starting MTR export for www.google.com
+2025-06-10 06:29:16,660 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 80 www.google.com
+2025-06-10 06:29:31,813 - INFO - Successfully wrote metrics to ./output/mtr_www_google_com.prom.tmp
+2025-06-10 06:29:31,827 - INFO - MTR export completed successfully
+2025-06-10 06:29:31 - Successfully updated metrics file: ./output/mtr_www_google_com.prom
+2025-06-10 06:29:31 - Metrics summary:
+2025-06-10 06:29:31 -   # HELP mtr_end_to_end_avg_rtt_ms End-to-end average round-trip time in milliseconds
+2025-06-10 06:29:31 -   # TYPE mtr_end_to_end_avg_rtt_ms gauge
+2025-06-10 06:29:31 -   mtr_end_to_end_avg_rtt_ms{environment="test",service="default",target="www.google.com",probe="default"} 12.254 1749529771813
+2025-06-10 06:29:31 - MTR export completed successfully
+2025-06-10 06:29:45 - Running in config mode with file: mtr_config.yaml
+2025-06-10 06:29:45,703 - INFO - Running probe 'google_web' for www.google.com:80
+2025-06-10 06:29:45,703 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 80 www.google.com
+2025-06-10 06:30:00,698 - INFO - Running probe 'google_dns' for 8.8.8.8:53
+2025-06-10 06:30:00,698 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 53 8.8.8.8
+2025-06-10 06:30:15,749 - INFO - Running probe 'cloudflare_dns' for 1.1.1.1:53
+2025-06-10 06:30:15,750 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 53 1.1.1.1
+2025-06-10 06:30:30,689 - INFO - Running probe 'github' for github.com:443
+2025-06-10 06:30:30,689 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 443 github.com
+2025-06-10 06:30:45,754 - INFO - Successfully wrote combined metrics to ./output/mtr_all_probes.prom
+2025-06-10 06:30:45 - Multi-probe MTR export completed successfully
+2025-06-10 06:30:45 - Metrics summary:
+2025-06-10 06:30:45 -   # HELP mtr_end_to_end_avg_rtt_ms End-to-end average round-trip time in milliseconds
+2025-06-10 06:30:45 -   # TYPE mtr_end_to_end_avg_rtt_ms gauge
+2025-06-10 06:30:45 -   mtr_end_to_end_avg_rtt_ms{environment="test",service="google_web",protocol="http",target="www.google.com",probe="google_web"} 11.147 1749529800698
+2025-06-10 06:30:45 -   # HELP mtr_end_to_end_avg_rtt_ms End-to-end average round-trip time in milliseconds
+2025-06-10 06:30:45 -   # TYPE mtr_end_to_end_avg_rtt_ms gauge
+2025-06-10 06:30:45 - MTR export completed successfully
+2025-06-10 06:30:58 - Starting MTR export for www.google.com:80
+2025-06-10 06:30:58,650 - INFO - Starting MTR export for www.google.com
+2025-06-10 06:30:58,650 - INFO - Running MTR command: mtr --report --report-cycles 10 --json --port 80 www.google.com
+2025-06-10 06:31:13,793 - INFO - Successfully wrote metrics to ./output/mtr_google.prom.tmp
+2025-06-10 06:31:13,793 - INFO - MTR export completed successfully
+2025-06-10 06:31:13 - Successfully updated metrics file: ./output/mtr_google.prom
+2025-06-10 06:31:13 - Metrics summary:
+2025-06-10 06:31:13 -   # HELP mtr_end_to_end_avg_rtt_ms End-to-end average round-trip time in milliseconds
+2025-06-10 06:31:13 -   # TYPE mtr_end_to_end_avg_rtt_ms gauge
+2025-06-10 06:31:13 -   mtr_end_to_end_avg_rtt_ms{environment="test",service="google_com",target="www.google.com",probe="default"} 11.273 1749529873793
+2025-06-10 06:31:13 - MTR export completed successfully
