@@ -1,0 +1,22 @@
+# MTR Monitoring Configuration
+global:
+  output_dir: "/usr/share/node_exporter/textfile_collector/"
+  log_file: "./mtr_exporter.log"  
+  log_level: "INFO"
+  mtr_cycles: 10
+
+probes:
+  - name: "cloudflare_dns"
+    target: "1.1.1.1"
+    port: 53
+    protocol: "udp"
+    
+  - name: "google_https"           # Cleaner name
+    target: "www.google.com"
+    port: 443
+    protocol: "tcp"
+    
+  - name: "google_dns"             # Cleaner name  
+    target: "8.8.8.8"
+    port: 53
+    protocol: "udp"
